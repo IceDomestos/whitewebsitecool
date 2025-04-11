@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Just a White Website</title>
+    <title>White Room</title>
     <style>
         body {
             background-color: white; /* Tło białe */
-            font-family: Arial, sans-serif; /* Ustawienie czcionki */
+            font-family: Arial, sans-serif; /* Czcionka */
             text-align: center; /* Wyrównanie tekstu do środka */
             padding: 0;
             margin: 0;
-            height: 100vh; /* Pełna wysokość okna */
+            height: 100vh; /* Pełna wysokość ekranu */
             display: flex;
             flex-direction: column;
             justify-content: center; /* Wyśrodkowanie elementów w pionie */
@@ -19,18 +19,29 @@
         }
         h1 {
             color: black; /* Kolor tekstu nagłówka */
+            font-size: 30px; /* Rozmiar czcionki */
             margin-bottom: 20px; /* Odstęp poniżej nagłówka */
         }
-        iframe {
-            width: 560px; /* Szerokość filmu */
-            height: 315px; /* Wysokość filmu */
-            border: none; /* Usunięcie ramki wokół filmu */
+        button {
+            padding: 15px 30px;
+            background-color: #4CAF50; /* Zielony kolor przycisku */
+            color: white;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+        button:hover {
+            background-color: #45a049; /* Efekt hover (ciemniejszy zielony) */
         }
     </style>
 </head>
 <body>
-    <h1>You have been rickrolled lol</h1>
-    <!-- Osadzony film rickroll -->
-    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" allow="autoplay" allowfullscreen></iframe>
+    <h1>Enter white room.</h1>
+    <!-- Przycisk, który przekierowuje do filmu rickrolla -->
+    <button onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ';">
+        Enter
+    </button>
 </body>
 </html>
